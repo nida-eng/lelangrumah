@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pilih Rumah Lelang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eaeff7;
+    }
+
+    .header {
+      background-color: #64a8f1;
+      padding: 30px;
+      color: white;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      width: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .btn-beli {
+      display: block;
+      background-color: #f94c66;
+      color: white;
+      padding: 10px 15px;
+      margin: 0 15px 15px 15px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-beli:hover {
+      background-color: #d73b55;
+    }
+
+    .logout-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .logout-btn {
+      background: #888;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Pilih Rumah Lelang</div>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="gambar1.jpg" alt="Rumah Serang" />
+      <div class="card-content">
+        <h3>Rumah Serang</h3>
+        <p>Rumah 130 m² di pusat Kota Serang. Harga: Rp 480.000.000</p>
+        <a href="#hubungi-admin" class="btn-beli">Beli Rumah</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gambar2.jpg" alt="Rumah Bandung" />
+      <div class="card-content">
+        <h3>Rumah Bandung</h3>
+        <p>Tanah 502 m² dengan bangunan di Bandung. Harga: Rp 850.000.000</p>
+        <a href="#hubungi-admin" class="btn-beli">Beli Rumah</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gambar3.jpg" alt="Rumah Jaksel" />
+      <div class="card-content">
+        <h3>Rumah Jaksel</h3>
+        <p>Luas tanah 197 m² di Jakarta Selatan. Harga: Rp 1.200.000.000</p>
+        <a href="#hubungi-admin" class="btn-beli">Beli Rumah</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gambar4.jpg" alt="Rumah Tangerang" />
+      <div class="card-content">
+        <h3>Rumah Tangerang</h3>
+        <p>Tanah & bangunan 84 m². Lokasi strategis. Harga: Rp 380.000.000</p>
+        <a href="#hubungi-admin" class="btn-beli">Beli Rumah</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="logout-container">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <!-- Tambahkan tujuan beli rumah -->
+  <section id="hubungi-admin" style="padding: 50px; background-color: #f2f2f2; text-align: center;">
+    <h2>Hubungi Admin</h2>
+    <p>Untuk pembelian rumah, silakan hubungi kami melalui WhatsApp:</p>
+    <a href="https://wa.me/6285692833195" target="_blank" class="btn-beli" style="display: inline-block; width: auto;">Chat Admin</a>
+  </section>
+
+  <script>
+    // Cek login
+    if (localStorage.getItem('loggedIn') !== 'true') {
+      alert('Silakan login terlebih dahulu!');
+      window.location.href = 'halaman1.html';
+    }
+
+    function logout() {
+      localStorage.removeItem('loggedIn');
+      alert('Anda telah logout.');
+      window.location.href = 'halaman1.html';
+    }
+  </script>
+</body>
+</html>

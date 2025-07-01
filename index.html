@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lelang Rumah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header-lelang">
+  <div class="konten-lelang">
+    <h1>LELANG RUMAH</h1>
+    <p>AMAN, MURAH, MEWAH</p>
+    </div>
+</div>
+
+
+
+
+  </header>
+
+  <main class="container">
+    <section class="filter">
+      <h2>Kontak & Aksi</h2>
+      <div class="actions">
+        <button onclick="hubungiPenjual()">📞 Hubungi Admin</button>
+        <button onclick="lihatLokasi()">📍 Lihat Lokasi</button>
+        <button onclick="kirimPesan()">💬Ajukan Komentar</button>
+        <button onclick="bukaBiodata()">📄 Biodata Penjual</button>
+
+      </div>
+    </section>
+
+
+    <section class="gallery" id="galeri">
+      <div class="card"
+  data-nama="Rumah Mewah Serang"
+  data-harga="Rp 480.000.000"
+  data-provinsi="Banten"
+  data-kota="Serang"
+  data-deskripsi="Rumah 130 m² di pusat kota, dekat sekolah dan pasar. 3 kamar tidur, 2 kamar mandi."
+  data-gambar="gambar1.jpg">
+  <img src="gambar1.jpg" alt="Rumah Serang">
+  <p>1 bidang tanah dengan luas 130 m² berikut bangunan di Kota...</p>
+  <a href="halaman1.html" class="btn-lelang">IKUTI LELANG</a>
+</div>
+
+
+      <div class="card" 
+        data-nama="Rumah Bandung"
+        data-harga="Rp 850.000.000"
+        data-deskripsi="Tanah luas 502 m² berikut bangunan di Bandung, Jawa Barat."
+        data-provinsi="Jawa Barat"
+        data-kota="Bandung"
+        data-gambar="gambar2.jpg">
+        <img src="gambar2.jpg" alt="Rumah Bandung">
+        <p>BPR Pondok Meja Indah melelang sebidang tanah luas 502 m² berikut...</p>
+        <a href="halaman1.html" class="btn-lelang">IKUTI LELANG</a>
+      </div>
+
+      <div class="card" 
+        data-nama="Rumah Jaksel"
+        data-harga="Rp 1.200.000.000"
+        data-deskripsi="Lelang tanah 197 m² di Jakarta Selatan, DKI Jakarta."
+        data-provinsi="DKI Jakarta"
+        data-kota="Jakarta Selatan"
+        data-gambar="gambar3.jpg">
+        <img src="gambar3.jpg" alt="Rumah Jaksel">
+        <p>OCBC NISP. Lelang Ulang 1 bidang tanah dengan total luas 197 m²...</p>
+        <a href="halaman1.html" class="btn-lelang">IKUTI LELANG</a>
+      </div>
+
+      <div class="card" 
+        data-nama="Rumah Tangerang"
+        data-harga="Rp 380.000.000"
+        data-deskripsi="Bangunan di Tangerang, Banten luas 84 m² dilelang oleh BPR Dana Nusantara."
+        data-provinsi="Banten"
+        data-kota="Tangerang"
+        data-gambar="gambar4.jpg">
+        <img src="gambar4.jpg" alt="Rumah Tangerang">
+        <p>BPR Dana Nusantara - 1 bidang tanah luas 84 m² berikut bangunan...</p>
+        <a href="halaman1.html" class="btn-lelang">IKUTI LELANG</a>
+      </div>
+      </section>
+
+      <!-- Popup Biodata Penjual -->
+<div id="popupBiodata" class="popup">
+  <div class="popup-content" style="max-width: 700px;">
+    <span class="close" onclick="tutupBiodata()">&times;</span>
+    <h2>Biodata Penjual</h2>
+
+    <div class="penjual">
+      <img src="penjual1.jpg" alt="Penjual 1">
+      <div>
+        <strong>Nama:</strong> Ibu Nida<br>
+        <strong>Alamat:</strong> Jl. Pahlawan No. 45, Serang, Banten<br>
+        <strong>Instansi:</strong> BPR Pondok Meja Indah<br>
+        <strong>Kontak:</strong> 0812-3456-7890<br>
+        <a href="https://wa.me/6285692833195" target="_blank">
+  <button style="margin-top:5px;">💬 Chat WA</button>
+</a>
+
+        <em>Menangani properti lelang area Serang & sekitarnya.</em>
+      </div>
+    </div>
+
+    <div class="penjual">
+      <img src="penjual2.jpg" alt="Penjual 2">
+      <div>
+        <strong>Nama:</strong> Ibu Asyanah<br>
+        <strong>Alamat:</strong> Jl. Asia Afrika No. 21, Bandung<br>
+        <strong>Instansi:</strong> OCBC NISP Bandung<br>
+        <a href="https://wa.me/6285692833195" target="_blank">
+  <button style="margin-top:5px;">💬 Chat WA</button>
+</a>
+
+        <em>Spesialis lelang Rumah dan tanah di Jawa Barat.</em>
+      </div>
+    </div>
+
+    <div class="penjual">
+      <img src="penjual3.jpg" alt="Penjual 3">
+      <div>
+        <strong>Nama:</strong> Ibu Nida Asyanah<br>
+        <strong>Alamat:</strong> Jl. Kemang Timur No. 88, Jakarta Selatan<br>
+        <strong>Instansi:</strong> BPR Dana Nusantara<br>
+        <a href="https://wa.me/62856-9283-3195" target="_blank">
+  <button style="margin-top:5px;">💬 Chat WA</button>
+</a>
+
+        <em>Berpengalaman lebih dari 10 tahun dalam urusan lelang Rumah DKI.</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+  </main>
+
+  <!-- Popup Detail Rumah -->
+  <div id="popupDetail" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="tutupDetail()">&times;</span>
+      <h2 id="detail-nama"></h2>
+      <img id="detail-gambar" src="" alt="Gambar Rumah" style="width:100%; border-radius:10px; margin-bottom:10px;">
+      <p><strong>Harga:</strong> <span id="detail-harga"></span></p>
+      <p><strong>Lokasi:</strong> <span id="detail-kota"></span>, <span id="detail-provinsi"></span></p>
+      <p><strong>Deskripsi:</strong><br><span id="detail-deskripsi"></span></p>
+    </div>
+  </div>
+
+  <!-- Formulir Pesan -->
+  <div id="formulirPesan" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="tutupFormPesan()">&times;</span>
+      <h2>Kirim Pesan ke Penjual</h2>
+      <form onsubmit="kirimPesanForm(event)">
+        <input type="text" id="nama" placeholder="Nama Anda" required><br>
+        <input type="email" id="email" placeholder="Email Anda" required><br>
+        <input type="tel" id="telepon" placeholder="Nomor HP" required><br>
+        <textarea id="pesan" placeholder="Tulis pesan Anda di sini..." rows="4" required></textarea><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </div>
+
+
+<!-- ================== Bagian: Cek Jadwal Lelang ================== -->
+<section class="jadwal-lelang">
+  <h2>Cek Jadwal Lelang Bulan Ini 📅</h2>
+  <p>Lelang akan dimulai dalam</p>
+  <div class="countdown">
+    <div class="time-box"><strong>0</strong> Hari</div>
+    <div class="time-box"><strong>11</strong></div>:
+    <div class="time-box"><strong>38</strong></div>:
+    <div class="time-box"><strong>51</strong></div>
+  </div>
+</section>
+
+<!-- ================== Bagian: Cara Membeli Aset Lelang ================== -->
+<section class="panduan-lelang">
+  <h2>Gimana Caranya Beli Aset Lelang?</h2>
+  <div class="langkah-container">
+    <div class="langkah">
+      <div class="nomor">1</div>
+      <h3>Cari Aset</h3>
+      <p>Cari aset dengan harga dan lokasi yang sesuai dengan keinginanmu</p>
+    </div>
+    <div class="langkah">
+      <div class="nomor">2</div>
+      <h3>Pilih Aset</h3>
+      <p>Pilih aset yang ingin kamu beli</p>
+    </div>
+    <div class="langkah">
+      <div class="nomor">3</div>
+      <h3>Hubungi Kami</h3>
+      <p>Langsung kontak kami untuk proses selanjutnya</p>
+    </div>
+    <div class="langkah">
+      <div class="nomor">4</div>
+      <h3>Lelang/Non-lelang</h3>
+      <p>Pembelian dapat melalui proses lelang maupun beli langsung</p>
+    </div>
+    <div class="langkah">
+      <div class="nomor">5</div>
+      <h3>Pelunasan</h3>
+      <p>Lakukan pelunasan dan lengkapi berkas sesuai ketentuan</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Bagian: Footer Kontak dan Tautan ================== -->
+<footer class="footer">
+  <div class="footer-block">
+    <h3>Kantor Pusat</h3>
+    <p>PT. Bank Rakyat Indonesia (Persero) Tbk.<br>
+    Gedung BRI Jl. Jenderal Sudirman Kav.44-46 Jakarta 10210 Indonesia</p>
+  </div>
+  <div class="footer-block">
+    <h3>Hubungi Kami</h3>
+    <p>📲 WhatsApp Only<br>Senin - Jumat: 7.30 - 16.30<br><small>(kecuali Sabtu, Minggu & Hari Libur)</small></p>
+    <p>☎️ 1500017</p>
+    <p>✉️ Nida Asyanah@.co.id</p>
+    <div class="sosmed">
+      <a href="#">IG</a>
+      <a href="#">FB</a>
+      <a href="#">YT</a>
+      <a href="#">TW</a>
+    </div>
+  </div>
+  <div class="footer-block">
+    <h3>Tautan</h3>
+    <ul>
+      <li><a href="#">Artikel</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Produk NIDA</a></li>
+      <li><a href="#">Rates</a></li>
+      <li><a href="#">Loan Interest Rates</a></li>
+      <li><a href="#">Fees & Rates</a></li>
+    </ul>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script>
+    const cards = document.querySelectorAll(".card");
+    const detailPopup = document.getElementById("popupDetail");
+
+    cards.forEach(card => {
+      card.addEventListener("click", function () {
+        document.getElementById("detail-nama").textContent = card.dataset.nama;
+        document.getElementById("detail-harga").textContent = card.dataset.harga;
+        document.getElementById("detail-provinsi").textContent = card.dataset.provinsi;
+        document.getElementById("detail-kota").textContent = card.dataset.kota;
+        document.getElementById("detail-deskripsi").textContent = card.dataset.deskripsi;
+        document.getElementById("detail-gambar").src = card.dataset.gambar;
+
+        detailPopup.style.display = "flex";
+      });
+    });
+
+    function tutupDetail() {
+      detailPopup.style.display = "none";
+    }
+
+    window.addEventListener("click", function (e) {
+      if (e.target === detailPopup) {
+        tutupDetail();
+      }
+    });
+
+    function hubungiPenjual() {
+      const noHP = "6281234567890"; // contoh
+      window.open(`https://wa.me/${noHP}?text=Halo,%20saya%20tertarik%20dengan%20rumah%20yang%20dijual`, "_blank");
+    }
+
+    function lihatLokasi() {
+      const lokasi = "https://maps.google.com/?q=Rumah+di+Serang"; // contoh
+      window.open(lokasi, "_blank");
+    }
+
+    function kirimPesan() {
+      document.getElementById("formulirPesan").style.display = "flex";
+    }
+
+    function tutupFormPesan() {
+      document.getElementById("formulirPesan").style.display = "none";
+    }
+
+    function kirimPesanForm(event) {
+      event.preventDefault();
+      const nama = document.getElementById("nama").value;
+      const email = document.getElementById("email").value;
+      const telepon = document.getElementById("telepon").value;
+      const pesan = document.getElementById("pesan").value;
+
+      alert(`Pesan terkirim!\n\nNama: ${nama}\nEmail: ${email}\nHP: ${telepon}\nPesan: ${pesan}`);
+      tutupFormPesan();
+      event.target.reset();
+    }
+
+    function lihatDetail() {
+      alert("Detail rumah ini sedang dimuat...");
+    }
+    
+  </script>
+  <script>
+  function bukaBiodata() {
+    document.getElementById("popupBiodata").style.display = "flex";
+  }
+
+  function tutupBiodata() {
+    document.getElementById("popupBiodata").style.display = "none";
+  }
+
+  // Nutup popup kalau klik di luar area
+  window.addEventListener("click", function (e) {
+    if (e.target === document.getElementById("popupBiodata")) {
+      tutupBiodata();
+    }
+  });
+</script>
+
+</body>
+</html>      
